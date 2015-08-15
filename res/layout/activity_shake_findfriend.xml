@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+        <include
+        android:id="@+id/common_actionbar"
+        layout="@layout/include_action_bar" />
+	    <TextView 
+	        android:gravity="center"
+		    android:id="@+id/tv_shake"
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:text="摇动手机\n或者点击下方图片\n可以查看附近的人"
+	        android:textSize="16sp"
+        />
+	                <RelativeLayout  
+                android:id="@+id/shakeImgUp"     
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content"                 
+                >                 
+                <ImageView                     
+                    android:layout_width="190dp"  
+                    android:layout_height="190dp"  
+                    android:layout_alignParentBottom="true"  
+                    android:layout_centerHorizontal="true"                                
+                    android:src="@drawable/shake1"  
+                     />                  
+            </RelativeLayout>  
+            <RelativeLayout  
+                android:id="@+id/shakeImgDown"  
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content"                 
+               >                 
+                <ImageView                     
+                    android:layout_width="190dp"  
+                    android:layout_height="190dp"  
+                    android:layout_centerHorizontal="true"    
+                    android:src="@drawable/shake2"  
+                     />                  
+            </RelativeLayout>   
+</LinearLayout>

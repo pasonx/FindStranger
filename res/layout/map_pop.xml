@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal" >
+
+	    <ImageView
+         	android:layout_marginLeft="50px"
+   		    android:layout_marginRight="50px"
+	        android:id="@+id/iv_pop_avatar"
+	        android:layout_width="200px"
+	        android:layout_height="200px"
+	         />
+
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+
+	        <TextView
+	            android:layout_marginRight="50px"
+	            android:textColor="@color/base_color_text_white"
+	            android:id="@+id/tv_pop_nickname"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="昵称:" />
+
+	        <TextView
+	            android:layout_marginRight="50px"
+	            android:textColor="@color/base_color_text_white"
+	            android:id="@+id/tv_pop_sex"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="性别:女" />
+	    </LinearLayout>
+	</LinearLayout>
+
+	<TextView 
+	    android:layout_marginLeft="50px"
+	    android:layout_marginRight="50px"
+	    android:textColor="@color/base_color_text_white"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/tv_pop_distance"
+	    android:text="距离:未知"/>
+	<TextView 
+	    android:layout_marginLeft="50px"
+	    android:layout_marginRight="50px"
+	    android:textColor="@color/base_color_text_white"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/tv_pop_logintime"
+	    android:text="登录时间:未知"/>
+    <Button
+         android:layout_marginLeft="50px"
+	     android:layout_marginRight="50px"
+	     android:id="@+id/btn_pop"
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:text="了解更多" />
+</LinearLayout>
